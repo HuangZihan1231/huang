@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -42,6 +40,18 @@
             font-size: 1.1rem;
             color: #a0a0c0;
         }
+        
+        /* 新增：下载按钮悬浮卡片样式 */
+        .download-hero {
+            background: #191933;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin-bottom: 30px;
+            border: 2px solid #00ffcc; /* 高亮边框 */
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+        }
+        
         .software-card {
             background: #191933;
             border-radius: 10px;
@@ -83,21 +93,26 @@
             color: #00ccff;
             text-decoration: underline;
         }
+        
+        /* 主按钮样式 */
         .download-btn {
             display: inline-block;
-            background: linear-gradient(90deg, #0066cc, #0099ff);
+            background: linear-gradient(90deg, #ff4500, #ff6347); /* 醒目的橙红渐变 */
             color: white;
-            padding: 12px 28px;
-            border-radius: 8px;
+            padding: 18px 45px; /* 加大尺寸 */
+            border-radius: 10px;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1.3rem; /* 加大字体 */
             font-weight: bold;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 69, 0, 0.4);
         }
         .download-btn:hover {
-            background: linear-gradient(90deg, #0088ff, #00bfff);
-            transform: translateY(-2px);
+            background: linear-gradient(90deg, #ff6347, #ff4500);
+            transform: translateY(-3px) scale(1.05); /* 悬浮放大效果 */
+            box-shadow: 0 8px 30px rgba(255, 69, 0, 0.6);
         }
+        
         footer {
             text-align: center;
             padding: 20px 0;
@@ -112,6 +127,10 @@
             .software-card h2 {
                 font-size: 1.5rem;
             }
+            .download-btn {
+                padding: 15px 35px;
+                font-size: 1.1rem;
+            }
         }
     </style>
 </head>
@@ -122,8 +141,14 @@
             <p>专注于简洁、安全的系统工具，为您提供便捷服务</p>
         </header>
 
+        <!-- 下载按钮移到最前面，作为第一屏展示 -->
+        <div class="download-hero">
+            <h2 style="color:#fff; margin-bottom:20px;">立即下载 黄拖鞋工具</h2>
+            <a href="https://wwayl.lanzouw.com/i3BLy3m2heyd" class="download-btn">🚀 立即下载 (永久免费)</a>
+        </div>
+
         <div class="software-card">
-            <h2>黄拖鞋Win11/10/7激活工具（全版本）</h2>
+            <h2>软件核心优势</h2>
             <div class="software-features">
                 <p>✅ 支持Win11、Win10、Win7全版本系统</p>
                 <p>✅ 一键激活，永久有效，操作简单</p>
@@ -137,8 +162,6 @@
                 <a href="https://www.onlinedown.net/" target="_blank">华军软件园</a>
                 <a href="https://www.wodown.com/" target="_blank">沃下载</a>
             </div>
-
-            <a href="https://wwayl.lanzouw.com/i3BLy3m2heyd" class="download-btn">立即下载</a>
         </div>
 
         <footer>
